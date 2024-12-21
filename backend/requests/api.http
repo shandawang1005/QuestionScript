@@ -11,7 +11,7 @@ Content-Type: application/json
 
 ### DELETE QUESTIONS
 
-DELETE http://127.0.0.1:5001/api/questions/67667e4e25f995a5ebb1606b
+DELETE http://127.0.0.1:5001/api/questions/676686be827cdba62a20f140
 Content-Type: application/json
 
 ### SUBMIT QUESTIONS
@@ -20,5 +20,10 @@ POST http://127.0.0.1:5001/api/questions
 Content-Type: application/json
 
 {
-    "name":"Mark", "question":"Some other questions"
+    "name":"Mark", 
+    "content":"Some other questions",
+    "link":"SomeRandomLink"
     }
+
+
+### UPDATE QUESTIONS

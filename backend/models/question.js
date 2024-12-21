@@ -24,7 +24,7 @@ const QuestionSchema = Schema({
         type: String,
 
     }
-}, { timestamp: true })  //第一个{}是基础内容，第二个{}是额外增加的内容
+}, { timestamps: true })  //第一个{}是基础内容，第二个{}是额外增加的内容
 
 export const Question = mongoose.model("Question", QuestionSchema)
 
