@@ -3,30 +3,35 @@
 const render = () => {
     const state = {
         questions: [{
+            _id:1,
             name: "Alice",
             link: "https://aliceportfolio.com",
             content: "我怎样才能让我的网站在移动设备上显示更好？",
             isAnswered: false
         },
         {
+            _id:2,
             name: "Bob",
             link: "https://github.com/bob-projects",
             content: "有没有简单的方法来实现用户登录和权限管理？",
             isAnswered: false
         },
         {
+            _id:3,
             name: "Charlie",
             link: "https://charliestudios.com",
             content: "如何在 JavaScript 中处理异步请求并且保证代码简洁？",
             isAnswered: false
         },
         {
+            _id:4,
             name: "Diana",
             link: "https://diana-designs.com",
             content: "如何在前端优化图片的加载速度？",
             isAnswered: false
         },
         {
+            _id:5,
             name: "Eric",
             link: "https://ericwritesblog.com",
             content: "我是否应该使用 CSS 框架（Bootstrap、Tailwind 等），还是自己写原生 CSS 更好？",
@@ -106,6 +111,9 @@ const render = () => {
 
     const generateQuestionList = () => {
         if (!state.questions.length) return Questions.innerText = "No Questions Yet!"
+
+
+        Questions.innerHTML = null
 
         state.questions.reverse().map((question, i) => {
 
