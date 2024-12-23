@@ -28,4 +28,4 @@ const QuestionSchema = Schema({
 
 export const Question = mongoose.model("Question", QuestionSchema)
 
-//把Schema从Schema转化可实用模型，这样才可以在CRUD时读取，这个是MongoDB
+//把Schema从Schema转化可实用模型，这样才可以在CRUD时读取，这个是MongoDB 
